@@ -6,6 +6,3 @@ def uppercase(str):
         newc = chr(asci)
         print("{}".format(newc), end='')
     print()
-
-test = "walid"
-uppercase(test)
