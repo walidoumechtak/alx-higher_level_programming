@@ -6,4 +6,4 @@ for i in range(0, 9):
         if i == 8 and j == 9 and i != j:
             print("{}".format(strg))
         elif i != j:
-            print("{} ,".format(strg), end='')
+            print("{}, ".format(strg), end='')
