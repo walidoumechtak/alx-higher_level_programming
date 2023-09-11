@@ -30,10 +30,17 @@ int is_palindrome(listint_t **head)
 	listint_t	*half;
 	listint_t	*new;
 	int	len;
+	int	i;
 
+	half = NULL;
 	if (head == NULL || *head == NULL)
 		return (0);
 	len = size_list(*head) / 2;
+	//i = len - (len / 2) + 1;
+	while (i < len)
+	{
+
+	}
 	
 	return (0);
 }
