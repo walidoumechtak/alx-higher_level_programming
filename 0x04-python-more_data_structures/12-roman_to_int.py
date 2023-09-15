@@ -11,10 +11,11 @@ def roman_to_int(roman_string):
     rom["D"] = 500
     rom["M"] = 1000
     res = rom[roman_string[0]]
+    temp =0
     for i in range(1, len(roman_string)):
-        if rom[roman_string[i]] > rom[roman_string[i - 1]]:
+        if rom[roman_string[i]] > rom[roman_string[i - 1]] and >= 0:
             res -= rom[roman_string[i]]
-        elif rom[roman_string[i]] < rom[roman_string[i - 1]]:
+        elif rom[roman_string[i]] < rom[roman_string[i - 1]] <= 0:
             res += rom[roman_string[i]]
         else:
             res += rom[roman_string[i]]
