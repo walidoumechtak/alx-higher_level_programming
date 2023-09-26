@@ -6,7 +6,7 @@
 class Square:
     """Represent the square."""
     def __init__(self, size=0):
-        """init the attr.
+        """Initialize the attr.
 
         args:
             size (int): the size of the square
