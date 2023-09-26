@@ -1,7 +1,16 @@
 #!/usr/bin/python3
+
+"""Define a class Square."""
+
+
 class Square:
+    """Represent a square."""
     def __init__(self, size=0):
-        """ inti that data of Square"""
+        """init that data of Square.
+
+        args:
+            size (int): the size of the square
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
