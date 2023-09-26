@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 class Square:
-    '''square class'''
+    """ Square class but its empty 
+        to be continued
+    """
     pass
