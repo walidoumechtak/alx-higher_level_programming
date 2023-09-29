@@ -1,0 +1,20 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+#sample tests case for add function
+
+>>> add_integer(1, 2)
+3
+>>> add_integer(2, 2)
+4
+>>> add_integer(4, 4)
+8
+>>> add_integer(1, 1.2)
+2
+>>> add_integer(0, 0)
+0
+>>> add_integer(5, 4)
+9
+>>> add_integer(1, 0)
+1
+>>> add_integer(0, 1)
+1
