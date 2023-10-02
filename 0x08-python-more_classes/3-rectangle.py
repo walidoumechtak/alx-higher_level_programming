@@ -70,6 +70,8 @@ class Rectangle:
     def __str__(self):
         """ define how instance should printed """
         rec = ""
+        if width == 0 or height == 0:
+            return rec
         for i in range(0, self.__height):
             inner = ""
             for j in range(0, self.__width):
