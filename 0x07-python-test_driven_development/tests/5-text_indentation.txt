@@ -1,0 +1,23 @@
+>>> put_str = __import__('5-text_indentation').text_indentation
+
+>>> put_str(12)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> put_str("""walid""")
+walid
+
+>>> put_str("""walid.oumechtak""")
+walid.
+<BLANKLINE>
+oumechtak
+
+>>> put_str("""med?oumechtak""")
+med?
+<BLANKLINE>
+oumechtak
+
+>>> put_str("""amine:oumechtak""")
+amine:
+<BLANKLINE>
+oumechtak

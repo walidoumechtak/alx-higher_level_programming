@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def text_indentation(text):
     contr = 0
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
     for i in range(0, len(text)):
         if text[i] == '.' or text[i] == '?' or text[i] == ':':
             print(text[i], end='')
