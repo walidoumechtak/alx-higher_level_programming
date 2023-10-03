@@ -1,0 +1,17 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+#functino that print the first and last
+
+>>> say_my_name("walid", "oumechtak")
+My name is walid oumechtak
+
+>>> say_my_name("med", "oumechtak")
+My name is med oumechtak
+
+>>> say_my_name(12, "int")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("float", 12.12)
+Traceback (most recent call last):
+TypeError: last_name must be a string
