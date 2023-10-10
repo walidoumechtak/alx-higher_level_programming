@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-import json
-
 """ define a to json string function """
-
+import json
 
 def to_json_string(my_obj):
     """ generate a json format from a string"""
