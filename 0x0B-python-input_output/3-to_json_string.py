@@ -4,5 +4,6 @@
 
 
 def to_json_string(my_obj):
+    """ generate a json format from a string"""
     json_str = json.dumps(my_obj)
     return json_str
