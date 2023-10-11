@@ -1,0 +1,9 @@
+>>> b = BaseGeometry()
+>>> b.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+>>> b = BaseGeometry()
+>>> b.integer_validator("walid", "val")
+Traceback (most recent call last):
+TypeError: walid must be an integer
