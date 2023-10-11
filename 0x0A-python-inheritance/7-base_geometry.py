@@ -10,7 +10,7 @@ class BaseGeometry:
 
     def integer_validator(self, name, value):
         """check the value
-        
+
         Args:
             name (str): the name
             value (int): the value
