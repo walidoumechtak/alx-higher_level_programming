@@ -32,3 +32,38 @@ class Rectangle(Base):
             raise TypeError("wdith must be an integer")
         self.__wdith = value
 
+    @property
+    def getHeight(self):
+        """get the height"""
+        return self.__height
+
+    @getHeight.setter
+    def setHeight(self, value):
+        """set the height"""
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        self.__height = value
+
+    @property
+    def getX(self):
+        """get the x"""
+        return self.__x
+    
+    @getX.setter
+    def setX(self.value):
+        """set the X"""
+        if not isinstance(self, value):
+            raise TypeError("x must be an integer")
+        self.__x = value
+
+    @property
+    def getY(self):
+        """get the Y"""
+        return self.__y
+
+    @getY.setter
+    def setY(self, value):
+        """set The Y"""
+        if not isinstance(self, value):
+            raise TypeError("y must be anintger")
+        self.__y = value
