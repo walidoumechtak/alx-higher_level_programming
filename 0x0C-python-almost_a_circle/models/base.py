@@ -4,7 +4,7 @@
 
 class Base:
     """body of the Base class"""
-    
+
     __nb_objects = 0
     def __init__(self, id=None):
         """defin init funct
@@ -12,8 +12,8 @@ class Base:
         Args:
             id (int): the id of object
         """
-        if id not None:
+        if id != None:
             self.id = id
         else:
-            __nb_objects += 1
-            id = __nb_objects
+            Base.__nb_objects += 1
+            self.id = self.__nb_objects

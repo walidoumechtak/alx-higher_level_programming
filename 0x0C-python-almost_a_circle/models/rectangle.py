@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+from base import Base
 """declare a Rectangle class"""
 
 
@@ -50,7 +51,7 @@ class Rectangle(Base):
         return self.__x
     
     @getX.setter
-    def setX(self.value):
+    def setX(self, value):
         """set the X"""
         if not isinstance(self, value):
             raise TypeError("x must be an integer")
