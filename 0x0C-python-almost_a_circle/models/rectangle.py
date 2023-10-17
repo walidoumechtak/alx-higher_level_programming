@@ -14,6 +14,11 @@ class Rectangle(Base):
             height (int): the height of retangel
             x (int): x
             y (int): y
+        Raises:
+            TypeError: if width or height are not int
+            ValueError: if width or height <= 0
+            TypeError: if x or y are not int
+            ValueError: if x ory < 0
         """
         super().__init__(id)
         self.__width = width
@@ -28,7 +33,6 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """set the width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -42,7 +46,6 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """set the height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value <= 0:
@@ -56,7 +59,6 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """set the X"""
         if not isinstance(self, value):
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -70,7 +72,6 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """set The Y"""
         if not isinstance(self, value):
             raise TypeError("y must be anintger")
         elif value < 0:
