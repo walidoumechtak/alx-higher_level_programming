@@ -53,7 +53,7 @@ class Rectangle(Base):
     def x(self):
         """get the x"""
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         """set the X"""
@@ -90,5 +90,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """override the __str__ method"""
-        strstr = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        myx = self.__x
+        myy = self.__y
+        myw = self.__width
+        myh = self.__height
+        strstr = f"[Rectangle] ({self.id}) {myx}/{myy} - {myw}/{myh}"
         return strstr
