@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from models.base import Base
 """declare a Rectangle class"""
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -12,19 +12,19 @@ class Rectangle(Base):
         Args:
             width (int): the width of rectangel
             height (int): the height of retangel
-            x (int): x
-            y (int): y
+            x (int): x cordinnate of rectangle
+            y (int): y cordinnate or rectangle
         Raises:
             TypeError: if width or height are not int
             ValueError: if width or height <= 0
             TypeError: if x or y are not int
             ValueError: if x ory < 0
         """
-        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
+        super().__init__(id)
 
     @property
     def width(self):
